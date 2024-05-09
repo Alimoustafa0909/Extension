@@ -24,8 +24,10 @@ function detectForms() {
     // For example:
     const forms = document.querySelectorAll('form');
     if (forms.length > 0) {
-        alert('Forms detected!');
+        // If forms are detected, send a message to the service worker
+        chrome.runtime.sendMessage({ action: 'form_detected' });
     } else {
-        alert('No forms found.');
+        // If no forms are found, send a message to the service worker
+        chrome.runtime.sendMessage({ action: 'no_form_detected' });
     }
 }
