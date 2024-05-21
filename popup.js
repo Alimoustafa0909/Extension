@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function detectForms() {
     // Add your code to detect forms here
     // For example:
-    console.log("button pressed")
+    // console.log("button pressed")
     const forms = document.querySelectorAll('form');
     if (forms.length > 0) {
         // If forms are detected, send a message to the service worker

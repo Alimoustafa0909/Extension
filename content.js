@@ -1,4 +1,5 @@
 // content.js
+console.log('hello from another world ')
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
     if (message.type === 'quote') {
         // Display the quote in an alert
