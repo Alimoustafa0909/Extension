@@ -3,6 +3,7 @@
 chrome.runtime.onMessage.addListener(async function(message, sender, sendResponse) {
     if (message.action === 'form_detected') {
         try {
+            console.log('form being detected Correctly')
             // Fetch a random quote from the API
             const quote = await fetchRandomQuote();
             // Send the quote back to the content script
